@@ -26,7 +26,17 @@ const ExpenseItem = (props) => {
         });
 
     }
-    const decreaseAllocation =(name) => {}
+    const decreaseAllocation =(name) => {
+        const expense = {
+            name: name,
+            cost: 10,
+        };
+
+        dispatch({
+            type: 'RED_EXPENSE',
+            payload: expense
+        });
+    }
 
     return (
         <tr>
