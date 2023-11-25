@@ -16,3 +16,36 @@ code {
 .btn.btn-success{
   border-radius: 50%;
 }
+
+.btn.dropdown-toggle{
+  background-color: var(--bs-teal) !important;
+}
+.dropdown-menu{
+  background-color: var(--bs-teal) !important;
+}
+
+
+
+.icons{
+  cursor:pointer;
+  transition: 0.2s linear;
+}
+.icons.green{
+  fill:var(--bs-green);
+}
+.icons.green:hover{
+  fill:var(--bs-teal);
+}
+.icons.red{
+  fill:var(--bs-red);
+}
+.icons.red:hover{
+  fill:lightcoral;
+}
+.icons.black{
+  fill:var(--bs-black);
+  stroke: var(--bs-white);
+}
+.icons.black:hover{
+  fill:rgb(100,100,100);
+}
