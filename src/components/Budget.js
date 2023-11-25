@@ -3,7 +3,6 @@ import { AppContext } from '../context/AppContext';
 
 const Budget = () => {
     const {expenses, budget, currency} = useContext(AppContext);
-    console.log(currency)
     const [newBudget, setNewBudget] = useState(budget);
     const totalExpenses = expenses.reduce((total,item) => {
         return (total = total + item.cost);
