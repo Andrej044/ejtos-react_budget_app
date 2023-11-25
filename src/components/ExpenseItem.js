@@ -1,4 +1,6 @@
 import React, { useContext } from 'react';
+import { IoIosAddCircle } from "react-icons/io";
+import { IoIosRemoveCircle } from "react-icons/io";
 import { TiDelete } from 'react-icons/ti';
 import { AppContext } from '../context/AppContext';
 
@@ -30,9 +32,9 @@ const ExpenseItem = (props) => {
         <tr>
         <td>{props.name}</td>
         <td>{currency}{props.cost}</td>
-        <td><button className="btn btn-success" onClick={event=> increaseAllocation(props.name)}>+</button></td>
-        <td><button className="btn btn-danger" onClick={event=> decreaseAllocation(props.name)}>-</button></td>
-        <td><TiDelete size='1.5em' onClick={handleDeleteExpense}></TiDelete></td>
+        <td><IoIosAddCircle className='icons green' size='2.5em'  onClick={event=> increaseAllocation(props.name)}></IoIosAddCircle></td>
+        <td><IoIosRemoveCircle className='icons red' size='2.5em' onClick={event=> decreaseAllocation(props.name)}></IoIosRemoveCircle></td>
+        <td><TiDelete className='icons black' size='1.5em' onClick={handleDeleteExpense}></TiDelete></td>
         </tr>
     );
 };
